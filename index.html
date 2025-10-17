@@ -219,7 +219,7 @@ a{color:inherit}
     if (!section){
       // fallback: heading text search
       var hs = Array.from(document.querySelectorAll('h2,h3'));
-      var h = hs.find(x => /Также от наших подрядчик/.test((x.textContent||'').trim()));
+      var h = hs.find(x => /Также от наших партнеров/.test((x.textContent||'').trim()));
       if (h) section = h.parentElement.querySelector('*:not(h2):not(h3)');
     }
     if (!section) return;
@@ -340,7 +340,7 @@ a{color:inherit}
   <!-- Projects -->
   <section class="projects" id="projects">
     <div class="container">
-      <h2>Готовые проекты</h2>
+      <h2>Проект дома вашей мечты</h2>
       <div class="grid">
         <article class="card">
           <img src="assets/projects/barn123.jpg" alt="Барн 123">
@@ -395,7 +395,7 @@ a{color:inherit}
         </article>
       </div>
 
-      <h3 class="partners-title">Также от наших подрядчиков</h3>
+      <h3 class="partners-title">Также от наших партнеров</h3>
       <section id="partners" class="partners" data-partners="true">
         <button class="car-btn prev arrow" aria-label="Назад">‹</button>
         <div class="track" id="partners-track">
