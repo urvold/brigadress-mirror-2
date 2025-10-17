@@ -7,7 +7,16 @@
   <meta name="description" content="Каркасные дома под ключ в Нижегородской области. Подберём 3–4 проверенных подрядчика и сопроводим до сдачи.">
   
 
-<style>/* will inject after */</style>
+<style>/* will inject after */
+
+/* На мобильных чуть компактнее */
+@media (max-width:560px){
+  .partners-title{
+    font-size: 26px;
+    margin-top: 34px;
+  }
+}
+</style>
 
 
 <style>
@@ -62,7 +71,13 @@ a{color:inherit}
 .price{display:inline-block;font-weight:800;color:#9bd3a6;margin-bottom:8px;padding:4px 8px;border:1px dashed #274734;border-radius:8px;background:#0b1210}
 .actions{display:flex;gap:10px}
 /* Partners carousel */
-.partners-title{margin:28px 0 10px}
+/* Заголовок секции партнёров: размер как у h2 и больший верхний отступ */
+.partners-title{
+  font-size: 32px;      /* как у h2 на десктопе */
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 48px 0 16px;  /* ↑ расстояние от секции с проектами */
+}
 .carousel{position:relative;border:1px solid var(--stroke);border-radius:16px;padding:10px;overflow:hidden}
 .car-track{display:grid;grid-auto-flow:column;gap:10px;overflow:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
 .car-track img{height:160px;width:auto;border-radius:10px;scroll-snap-align:center;border:1px solid var(--stroke)}
