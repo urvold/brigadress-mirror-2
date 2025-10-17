@@ -7,16 +7,7 @@
   <meta name="description" content="Каркасные дома под ключ в Нижегородской области. Подберём 3–4 проверенных подрядчика и сопроводим до сдачи.">
   
 
-<style>/* will inject after */
-
-/* На мобильных чуть компактнее */
-@media (max-width:560px){
-  .partners-title{
-    font-size: 26px;
-    margin-top: 34px;
-  }
-}
-</style>
+<style>/* will inject after */</style>
 
 
 <style>
@@ -71,13 +62,7 @@ a{color:inherit}
 .price{display:inline-block;font-weight:800;color:#9bd3a6;margin-bottom:8px;padding:4px 8px;border:1px dashed #274734;border-radius:8px;background:#0b1210}
 .actions{display:flex;gap:10px}
 /* Partners carousel */
-/* Заголовок секции партнёров: размер как у h2 и больший верхний отступ */
-.partners-title{
-  font-size: 32px;      /* как у h2 на десктопе */
-  line-height: 1.2;
-  font-weight: 800;
-  margin: 48px 0 16px;  /* ↑ расстояние от секции с проектами */
-}
+.partners-title{margin:28px 0 10px}
 .carousel{position:relative;border:1px solid var(--stroke);border-radius:16px;padding:10px;overflow:hidden}
 .car-track{display:grid;grid-auto-flow:column;gap:10px;overflow:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
 .car-track img{height:160px;width:auto;border-radius:10px;scroll-snap-align:center;border:1px solid var(--stroke)}
@@ -234,7 +219,7 @@ a{color:inherit}
     if (!section){
       // fallback: heading text search
       var hs = Array.from(document.querySelectorAll('h2,h3'));
-      var h = hs.find(x => /Построено нашими партнёрами/.test((x.textContent||'').trim()));
+      var h = hs.find(x => /Также от наших подрядчик/.test((x.textContent||'').trim()));
       if (h) section = h.parentElement.querySelector('*:not(h2):not(h3)');
     }
     if (!section) return;
@@ -355,7 +340,7 @@ a{color:inherit}
   <!-- Projects -->
   <section class="projects" id="projects">
     <div class="container">
-      <h2>Проект дома вашей мечты</h2>
+      <h2>Готовые проекты</h2>
       <div class="grid">
         <article class="card">
           <img src="assets/projects/barn123.jpg" alt="Барн 123">
@@ -410,7 +395,7 @@ a{color:inherit}
         </article>
       </div>
 
-      <h3 class="partners-title">Построено нашими партнёрами</h3>
+      <h3 class="partners-title">Также от наших подрядчиков</h3>
       <section id="partners" class="partners" data-partners="true">
         <button class="car-btn prev arrow" aria-label="Назад">‹</button>
         <div class="track" id="partners-track">
